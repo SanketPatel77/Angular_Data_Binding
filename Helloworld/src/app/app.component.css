@@ -39,3 +39,13 @@
 input {
   color: black;
 }
+.userInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.userInput span {
+  color: red;
+  padding: 10px;
+}

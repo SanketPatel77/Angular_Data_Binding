@@ -5,7 +5,9 @@
       <img [src]="imageUrl" (click)="onClick($event)" alt="BridgeLabz logo">
     </div>
     <div class="userInput">
-      <input [ngModel]="userName" (ngModelChange)="userName = $event" placeholder="Enter your name">
+      <input [ngModel]="userName" (ngModelChange)="userName = $event" placeholder="Enter your name"
+        (input)="validateName(userName)">
+      <span>{{this.errorMessage}}</span>
     </div>
   </div>
 </main>
